@@ -1,12 +1,13 @@
 :root {
-  --accent-color-1: #fab131;
-  --accent-color-2: #353b79;
-  --accent-color-3: #af333e;
-  --accent-color-neutral-1: #ffffff;
-  --accent-color-neutral-2: #000000;
+  --primary-color: #353b79;
+  --secondary-color: #fab131;
+  --tertiary-color: #af333e;
+  --primary-color-light-90: #dcdeef;
+  --primary-color-light-95: #eeeef7;
+  --neutral-color-1: #ffffff;
+  --neutral-color-2: #000000;
 }
 
-
-body{
-    background-color: var(--accent-color-2);
+body {
+  background-color: var(--primary-color-light-90);
 }
