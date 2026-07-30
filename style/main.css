@@ -80,6 +80,131 @@ header {
   color: var(--primary-color);
 }
 
+.hero-section{
+  background-color: var(--primary-color-light-90);
+}
+
+.hero-image{
+  width: 32.5rem;
+}
+
+.hero-image img{
+  max-width: 100%;
+}
+
+.hero-heading{
+  font-size: 4rem;
+}
+
+.hero-paragraph{
+  line-height: 3rem;
+}
+
+.hero-image-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, hsl(0, 0%, 100%, 0%) 0%, 75%, var(--primary-color-light-90) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-cta-box{
+  background-color: var(--neutral-color-1);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.hero-cta-box .material-symbols-outlined{
+  color: var(--secondary-color);
+  font-size: 5rem;
+}
+
+.hero-cta-text-box{
+  width: 18rem;
+  font-weight: 600;
+}
+.hero-cta-text-big{
+  font-size: 2rem;
+}
+
+.hero-cta-text-small{
+  font-size: 1.5rem;
+}
+
+.hero-cta-button{
+  appearance: none;
+  background-color: var(--tertiary-color);
+  color: var(--neutral-color-1);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3rem 0rem;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.courses-category-display{
+  background-color: var(--primary-color-light-95);
+}
+
+.course-category-menu-button{
+  appearance: none;
+  background-color: var(--primary-color);
+  color: var(--neutral-color-1);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Gill Sans MT Condensed', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+  padding: 2rem;
+}
+
+.section-container{
+  padding: 4rem 3rem;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.flex-gap-2{
+  gap: 3rem;
+}
+
+.flex-gap-3{
+  gap: 3rem;
+}
+
+.flex-center-aligned{
+  align-items: center;
+}
+
+.menu-list-item{
+  list-style: none;
+}
+
+.positioned-relative{
+  position: relative;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
