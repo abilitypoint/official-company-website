@@ -193,6 +193,31 @@ header {
   color: var(--primary-color);
 }
 
+.faq-item{
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.faq-item summary::marker{
+  content: '';
+}
+
+.faq-item summary .icon-filled::before{
+  content: 'expand_circle_right';
+  color: var(--primary-color);
+}
+
+.faq-item:open summary .icon-filled::before{
+  content: 'expand_circle_down';
+}
+
+.faq-question{
+  font-weight: 700;
+}
+
+.faq-answer{
+  line-height: 1.5;
+}
+
 .button-blue{
   appearance: none;
   border: none;
@@ -233,6 +258,10 @@ header {
 
 .flex-center-aligned{
   align-items: center;
+}
+
+.flex-space-between{
+  justify-content: space-between;
 }
 
 .menu-list-item{

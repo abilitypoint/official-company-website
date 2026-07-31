@@ -7,7 +7,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=adb,ads_click,captive_portal,child_care,code_blocks,code_xml,cognition_2,design_services,desktop_windows,developer_board,menu,mobile_code,verified,wand_stars&display=block" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=adb,ads_click,captive_portal,child_care,code_blocks,code_xml,cognition_2,design_services,desktop_windows,developer_board,expand_circle_down,expand_circle_right,menu,mobile_code,verified,wand_stars&display=block" />
     <link rel="stylesheet" href="./style/main.css" />
     <title>Home - Ability Point Computer Training</title>
   </head>
@@ -28,11 +30,19 @@
       <main id="main">
         <section class="hero-section" aria-label="introduction content">
           <div class="flex-col flex-gap-3 section-container flex-center-aligned">
-            <div class="hero-image positioned-relative"><img src="./assets/images/student-photo-1.png" alt="hero section showing a boy with a backpack standing besides a girl wearing a backpack and holding an open laptop with her left hand" /><div class="hero-image-overlay">
-              <div class="hero-cta-box flex-row container">
-                <span class="material-symbols-outlined" aria-hidden="true">cognition_2</span ><div class="hero-cta-text-box"><span class="hero-cta-text-big">Ready to learn?</span><br aria-hidden="true"><span class="hero-cta-text-small">Look up what you love</span></div>
+            <div class="hero-image positioned-relative">
+              <img
+                src="./assets/images/student-photo-1.png"
+                alt="hero section showing a boy with a backpack standing besides a girl wearing a backpack and holding an open laptop with her left hand" />
+              <div class="hero-image-overlay">
+                <div class="hero-cta-box flex-row container">
+                  <span class="material-symbols-outlined" aria-hidden="true">cognition_2</span>
+                  <div class="hero-cta-text-box">
+                    <span class="hero-cta-text-big">Ready to learn?</span><br aria-hidden="true" /><span class="hero-cta-text-small">Look up what you love</span>
+                  </div>
+                </div>
               </div>
-            </div></div>
+            </div>
             <div class="hero-text flex-col">
               <h2 class="hero-heading" aria-label="the digital skills for a connected world">The digital skills<br aria-hidden="true" />for a connected world</h2>
               <p class="hero-paragraph">Looking to upskill or prepare yourself for a career in computing technology? You don’t have to do it alone, we are here to help!</p>
@@ -41,8 +51,16 @@
             <div class="courses-category-display flex-col flex-center-aligned container">
               <p>You can start with:</p>
               <menu class="course-category-options flex-row">
-                <li class="menu-list-item"><button class="course-category-menu-button flex-row flex-center-aligned" aria-label="professional courses"><span>Professional Courses</span><span class="material-symbols-outlined" aria-hidden="true">verified</span></button></li>
-                <li class="menu-list-item"><button class="course-category-menu-button flex-row flex-center-aligned" aria-label="summer coaching courses"><span>Summer Coaching</span><span class="material-symbols-outlined" aria-hidden="true">child_care</span></button></li>
+                <li class="menu-list-item">
+                  <button class="course-category-menu-button flex-row flex-center-aligned" aria-label="professional courses">
+                    <span>Professional Courses</span><span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                  </button>
+                </li>
+                <li class="menu-list-item">
+                  <button class="course-category-menu-button flex-row flex-center-aligned" aria-label="summer coaching courses">
+                    <span>Summer Coaching</span><span class="material-symbols-outlined" aria-hidden="true">child_care</span>
+                  </button>
+                </li>
               </menu>
             </div>
           </div>
@@ -178,6 +196,41 @@
               <button class="button-blue">Start course now</button>
             </div>
           </article>
+        </section>
+        <section class="section-container flex-col flex-gap-1" aria-labelledby="faq-heading">
+          <h2 id="faq-heading" class="faq-heading flex-col flex-center-aligned">Frequently Asked Questions</h2>
+          <details class="faq-item flex-col container">
+            <summary class="faq-question flex-row flex-space-between" aria-label="question 1"><span>How much does the course cost</span><span class="summary-marker material-symbols-outlined icon-filled" aria-hidden="true"></span></summary>
+            <div class="faq-answer flex-col">
+              <p>
+                The cost of our courses varies depending on the programme you choose. We offer flexible payment plans to make studying more accessible. For full details tailored
+                to your course of interest, please <a href="">fill in the form below</a>.
+              </p>
+              <p>
+                Wherever possible our training is tailored to your needs. The cost of our training programmes depend on the course(s) you choose and varies according to duration and breadth.
+                Rest assured we have a number of payment options available to ensure the cost of training is affordable and can be worked alongside your other financial commitments.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item flex-col container">
+            <summary class="faq-question flex-row flex-space-between" aria-label="question 2"><span>Can I find work at the end of the program</span><span class="summary-marker material-symbols-outlined icon-filled" aria-hidden="true"></span></summary>
+            <div class="faq-answer flex-col">
+              <p>
+                Yes. The industry-relevant skills you get from completing any of our great course offerings will open the doors to a variety of careers thanks to its unique tailor-made set up. You are better placed to kick-start a rewarding career in the information technology industry.
+              </p>
+              <p>
+                Alternatively, you could utilise the skills gained in any non-IT roles such as Medical Secretary, Legal Secretary, PA, EA or Office Manager.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item flex-col container">
+            <summary class="faq-question flex-row flex-space-between" aria-label="question 3"><span>When can I start</span><span class="summary-marker material-symbols-outlined icon-filled" aria-hidden="true"></span></summary>
+            <div class="faq-answer">
+              <p>
+               We have monthly intakes for every course, please <a href="">enquire to find out more</a>.
+              </p>
+            </div>
+          </details>
         </section>
       </main>
     </div>
