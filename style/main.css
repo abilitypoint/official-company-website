@@ -253,3 +253,7 @@ header {
   clip-path: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.text-box-trimmed{
+  text-box: trim-both cap alphabetic;
+}
