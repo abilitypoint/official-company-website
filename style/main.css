@@ -57,6 +57,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 3rem 2rem;
+  position:sticky;
+  top: 0;
+  z-index: 30;
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
 }
 
 .site-logo {
@@ -93,6 +101,45 @@ header {
 
 .mobile-menu-toggle .material-symbols-outlined {
   color: var(--primary-color);
+}
+
+.mobile-nav{
+  left: 0;
+  right: 0;
+  top: 11.625rem;
+  height:100vh;
+  font-size: 2rem;
+  text-decoration: none;
+  position: sticky;
+  z-index: 20;
+  display: none;
+  text-align: right;
+}
+
+.show{
+  display: block;
+}
+
+.mobile-nav a{
+  text-decoration: none;
+  color: var(--neutral-color-2);
+}
+
+.mobile-nav a:visited{
+  color:var(--neutral-color-2)
+}
+
+.mobile-nav a:active{
+  color:var(--tertiary-color)
+}
+
+.mobile-nav li{
+  padding-right: 6rem;
+}
+
+.mobile-nav li:not(:last-child){
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-color-light-90);
 }
 
 .hero-section{
@@ -318,6 +365,14 @@ address{
   background-color: var(--secondary-color);
 }
 
+.shaded-box-primary-light{
+  background-color: var(--primary-color-light-95);
+}
+
 .text-box-trimmed{
   text-box: trim-both cap alphabetic;
+}
+
+.no-scroll{
+  overflow: hidden;
 }
