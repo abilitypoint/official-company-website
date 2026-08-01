@@ -214,7 +214,7 @@ header {
   font-weight: 700;
 }
 
-.faq-answer{
+.faq-answer, .contact-info-text-box{
   line-height: 1.5;
 }
 
@@ -226,6 +226,20 @@ header {
   color: var(--neutral-color-1);
   padding: 1rem 2rem;
   width: 100%;
+}
+
+.button-tertiary{
+  appearance: none;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--tertiary-color);
+  color: var(--neutral-color-1);
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.bordered-box-secondary-1{
+  border: 1px solid var(--secondary-color);
 }
 
 .container{
@@ -264,6 +278,10 @@ header {
   justify-content: space-between;
 }
 
+.full-width{
+  width: 100%;
+}
+
 .menu-list-item{
   list-style: none;
 }
@@ -281,6 +299,14 @@ header {
   overflow: hidden;
   clip-path: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.shaded-box-primary{
+  background-color: var(--primary-color-light-90);
+}
+
+.shaded-box-secondary{
+  background-color: var(--secondary-color);
 }
 
 .text-box-trimmed{
