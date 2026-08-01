@@ -116,10 +116,6 @@ nav li{
   text-align: right;
 }
 
-.show{
-  display: block;
-}
-
 .mobile-nav a{
   text-decoration: none;
   color: var(--neutral-color-2);
