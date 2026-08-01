@@ -30,11 +30,11 @@
       </header>
       <nav class="mobile-nav section-container shaded-box-primary-light" aria-label="website navigation">
         <menu class="flex-col flex-gap-2">
-          <li><a href="" class="nav-link">Courses</a></li>
-          <li><a href="" class="nav-link">Summer Coaching</a></li>
-          <li><a href="" class="nav-link">Frequently Asked Questions</a></li>
-          <li><a href="" class="nav-link">About</a></li>
-          <li><a href="" class="nav-link">Contact</a></li>
+          <li><a href="#a2" class="nav-link">Courses</a></li>
+          <li><a href="#a3" class="nav-link">Summer Coaching</a></li>
+          <li><a href="#a4" class="nav-link">Frequently Asked Questions</a></li>
+          <li><a href="#main" class="nav-link">About</a></li>
+          <li><a href="#a5" class="nav-link">Contact</a></li>
         </menu>
       </nav>
       <main id="main">
@@ -59,6 +59,7 @@
             </div>
             <button class="hero-cta-button">Speak With Us</button>
             <div class="courses-category-display flex-col flex-center-aligned container">
+              <span id="a2" class="sr-only"></span>
               <p>You can start with:</p>
               <menu class="course-category-options flex-row">
                 <li class="menu-list-item">
@@ -75,7 +76,7 @@
             </div>
           </div>
         </section>
-        <section class="section-container flex-col flex-gap-2" aria-label="line up of available course offerings">
+        <section id="course-offerings" class="section-container flex-col flex-gap-2" aria-label="line up of available course offerings">
           <article class="container course-card flex-col flex-gap-2" aria-labelledby="ail">
             <div class="flex-row flex-gap-1 flex-center-aligned">
               <span class="material-symbols-outlined icon-filled" aria-hidden="true">verified</span>
@@ -168,6 +169,8 @@
             </div>
           </article>
           <article class="container course-card flex-col flex-gap-2" aria-labelledby="wde">
+            <!-- anchor point for summer coaching link  -->
+            <span id="a3" class="sr-only"></span>
             <div class="flex-row flex-gap-1 flex-center-aligned">
               <span class="material-symbols-outlined icon-filled" aria-hidden="true">verified</span>
               <span class="material-symbols-outlined icon-filled" aria-hidden="true">code_xml</span>
@@ -194,6 +197,8 @@
             </div>
           </article>
           <article class="container course-card flex-col flex-gap-2" aria-labelledby="sdp">
+            <!-- anchor point for faq link  -->
+            <span id="a4" class="sr-only"></span>
             <div class="flex-row flex-gap-1 flex-center-aligned">
               <span class="material-symbols-outlined icon-filled" aria-hidden="true">child_care</span>
               <span class="material-symbols-outlined icon-filled" aria-hidden="true">desktop_windows</span>
@@ -237,6 +242,8 @@
             </div>
           </details>
           <details class="faq-item flex-col container">
+            <!-- anchor point for contact link  -->
+            <span id="a5" class="sr-only"></span>
             <summary class="faq-question flex-row flex-space-between" aria-label="question 3">
               <span>When can I start</span><span class="summary-marker material-symbols-outlined icon-filled" aria-hidden="true"></span>
             </summary>
