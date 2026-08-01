@@ -218,6 +218,10 @@ header {
   line-height: 1.5;
 }
 
+address{
+  text-align: center;
+}
+
 .button-blue{
   appearance: none;
   border: none;
@@ -240,6 +244,11 @@ header {
 
 .bordered-box-secondary-1{
   border: 1px solid var(--secondary-color);
+}
+
+.text-bold-underlined{
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .container{
