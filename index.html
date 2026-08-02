@@ -272,8 +272,10 @@
                   <label for="phone">Phone</label>
                 </div>
                 <div class="flex-col flex-gap-1 full-width">
-                  <input type="text" id="name" name="name" required />
-                  <input type="tel" id="phone" name="phone" required />
+                  <input type="text" id="name" name="name" pattern="[a-zA-Z\s]{2,30}" aria-describedby="error-name" placeholder="e.g Phinehas" required />
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" aria-describedby="error-phone" placeholder="e.g 07043759865" required />
+                  <span id="error-name" class="error-message" role="alert" hidden>Please enter a valid name. A valid name includes atleast 2 uppercase or lowercase alphabets</span>
+                  <span id="error-phone" class="error-message" role="alert" hidden>Please enter a valid phone number. A valid phone number is between 10 and 11 digits</span>
                 </div>
               </div>
               <button type="submit" class="button-tertiary">Submit</button>

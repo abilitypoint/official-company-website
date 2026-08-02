@@ -394,3 +394,17 @@ button{
 .show{
   display: block;
 }
+
+.error-message{
+  color: red;
+  font-size: 1.5rem;
+}
+
+input[type=text], input[type=tel]{
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+::placeholder{
+  font-family: var(--primary-font);
+}
