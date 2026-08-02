@@ -223,7 +223,6 @@ nav li{
   border-radius: 2rem;
   font-family: brand-font-2, sans-serif;
   text-decoration: none;
-  
 }
 
 .course-card{
@@ -266,6 +265,22 @@ nav li{
 
 address{
   text-align: center;
+}
+
+.floating-action-button{
+  position:fixed;
+  right: 0;
+  top: 50rem;
+  z-index: 10;
+  background-color: var(--neutral-color-1);
+  border:1px solid var(--primary-color-light-90);
+}
+
+button{
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .button-blue{
