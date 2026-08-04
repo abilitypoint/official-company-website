@@ -4,6 +4,7 @@ const call_back_Form = {
     error_name: document.querySelector('#error-name'),
     error_phone: document.querySelector('#error-phone'),
     form_feedback: document.querySelector('#form-feedback'),
+    submit_button:document.querySelector('#cbform-submit-button'),
     form: document.querySelector('#call_back_form')
 };
 
