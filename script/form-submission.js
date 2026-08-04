@@ -4,7 +4,7 @@ async function handleSubmit(event) {
     const formData = new FormData(call_back_Form.form);
     let name = formData.get("name");
     let phone = formData.get("phone");
-
+    
     try {
         const response = await fetch('https://abilitypoint-website-0-0-1.onrender.com/form-handler.php', {
             method: 'POST',
@@ -30,6 +30,7 @@ async function handleSubmit(event) {
 
     call_back_Form.form_feedback.hidden = false;
 
+    call_back_Form.form.reset()
 }
 
 export{handleSubmit}
