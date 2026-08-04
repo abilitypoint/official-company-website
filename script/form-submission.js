@@ -5,8 +5,12 @@ async function handleSubmit(event) {
     let name = formData.get("name");
     let phone = formData.get("phone");
 
-    call_back_Form.submit_button.disabled = true;
     call_back_Form.submit_button.textContent = 'sending...';
+    call_back_Form.submit_button.disabled = true;
+    call_back_Form.submit_button.classList.add('disabled-control');
+    call_back_Form.form_feedback.hidden = true;
+    call_back_Form.error_phone.hidden = true;
+    call_back_Form.error_name.hidden = true;
 
     try {
         const response = await fetch('https://abilitypoint-website-0-0-1.onrender.com/form-handler.php', {
@@ -34,6 +38,7 @@ async function handleSubmit(event) {
     call_back_Form.form_feedback.hidden = false;
     call_back_Form.submit_button.disabled = false;
     call_back_Form.submit_button.textContent = 'Submit';
+    call_back_Form.submit_button.classList.remove('disabled-control');
     call_back_Form.form.reset()
 }
 

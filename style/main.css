@@ -413,3 +413,8 @@ input[type=text], input[type=tel]{
 ::placeholder{
   font-family: var(--primary-font);
 }
+
+.disabled-control{
+  background-color: var(--primary-color-light-90);
+  color:var(--neutral-color-2);
+}
