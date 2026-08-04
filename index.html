@@ -265,17 +265,18 @@
           </div>
           <div class="container">
             <h3 class="enquiries-heading container shaded-box-secondary">Request a callback</h3>
-            <form action="" class="flex-col container bordered-box-secondary-1" aria-label="call back request form">
+            <form id="call_back_form" action="" method="get" class="flex-col container bordered-box-secondary-1" aria-label="call back request form">
               <div class="flex-row">
                 <div class="label-group flex-col flex-gap-1">
                   <label for="name">Name</label>
                   <label for="phone">Phone</label>
                 </div>
                 <div class="flex-col flex-gap-1 full-width">
-                  <input type="text" id="name" name="name" pattern="[a-zA-Z\s]{2,30}" aria-describedby="error-name" placeholder="e.g Phinehas" required />
+                  <input type="text" id="name" name="name" pattern="[a-zA-Z\s]{2,30}" aria-describedby="error-name" placeholder="e.g Phinehas Enakireru" required />
                   <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" aria-describedby="error-phone" placeholder="e.g 07043759865" required />
                   <span id="error-name" class="error-message" role="alert" hidden>Please enter a valid name. A valid name includes atleast 2 uppercase or lowercase alphabets</span>
                   <span id="error-phone" class="error-message" role="alert" hidden>Please enter a valid phone number. A valid phone number is between 10 and 11 digits</span>
+                  <span id="form-feedback" role="alert" hidden>Your requested has been sent successfully. Expect a call from us soonest!</span>
                 </div>
               </div>
               <button type="submit" class="button-tertiary">Submit</button>

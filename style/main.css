@@ -400,6 +400,11 @@ button{
   font-size: 1.5rem;
 }
 
+.success-message{
+  color: green;
+  font-size: 1.5rem;
+}
+
 input[type=text], input[type=tel]{
   box-sizing: border-box;
   padding: 0 1rem;
