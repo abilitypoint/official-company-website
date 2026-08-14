@@ -239,6 +239,10 @@ nav li{
   color: var(--primary-color);
 }
 
+.course-card-description{
+  line-height: 1.7;
+}
+
 .faq-item{
   border-bottom: 1px solid var(--secondary-color);
 }
