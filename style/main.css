@@ -410,9 +410,10 @@ button{
   font-size: 1.5rem;
 }
 
-input[type=text], input[type=tel]{
+input[type=text], input[type=tel], select{
   box-sizing: border-box;
   padding: 0 1rem;
+  background-color: white;
 }
 
 ::placeholder{

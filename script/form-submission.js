@@ -4,6 +4,7 @@ async function handleSubmit(event) {
     const formData = new FormData(call_back_Form.form);
     let name = formData.get("name");
     let phone = formData.get("phone");
+    let course = formData.get("course");
 
     call_back_Form.submit_button.textContent = 'sending...';
     call_back_Form.submit_button.disabled = true;
@@ -16,7 +17,7 @@ async function handleSubmit(event) {
         const response = await fetch('https://abilitypoint-website-0-0-1.onrender.com/form-handler.php', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name: name, phone: phone })
+            body: JSON.stringify({ name: name, phone: phone, course: course })
         });
 
         console.log(response.status);

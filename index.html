@@ -285,10 +285,26 @@
                 <div class="label-group flex-col flex-gap-1">
                   <label for="name">Name</label>
                   <label for="phone">Phone</label>
+                  <label for="course-select">Course of interest</label>
                 </div>
                 <div class="flex-col flex-gap-1 full-width">
                   <input type="text" id="name" name="name" pattern="[a-zA-Z\s]{2,30}" aria-describedby="error-name" placeholder="e.g Phinehas Enakireru" required />
                   <input type="tel" id="phone" name="phone" pattern="[0-9]{11,11}" aria-describedby="error-phone" placeholder="e.g 07043759865" required />
+                  <select name="course" id="course-select">
+                    <option value="AI Literacy">AI Literacy</option>
+                    <option value="Desktop Publishing">Desktop Publishing</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Internet of Things">Internet of Things</option>
+                    <option value="
+Mobile App Development">
+Mobile App Development</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Website Development - Frontend">Website Development - Frontend</option>
+                    <option value="Website Development - Backend">Website Development - Backend</option>
+                    <option value="Coding Summer">Summer - Coding</option>
+                    <option value="Desktop Publishing Summer">Summer - Desktop Publishing</option>
+                  </select>
                   <span id="error-name" class="error-message" role="alert" hidden>Please enter a valid name. A valid name includes atleast 2 uppercase or lowercase alphabets</span>
                   <span id="error-phone" class="error-message" role="alert" hidden>Please enter a valid phone number. A valid phone number is 11 digits long</span>
                   <span id="form-feedback" role="alert" hidden>Your requested has been sent successfully. Expect a call from us soonest!</span>
