@@ -414,6 +414,8 @@ input[type=text], input[type=tel], select{
   box-sizing: border-box;
   padding: 0 1rem;
   background-color: white;
+  font-family: var(--primary-font);
+  font-size: 2rem;
 }
 
 ::placeholder{
