@@ -1,0 +1,63 @@
+const DESKTOP_QUERY = '(min-width: 900px)';
+const ROTATION_INTERVAL = 6000;
+
+function registerHeroCarousel() {
+    const carousel = document.querySelector('[data-hero-carousel]');
+
+    if (!carousel) {
+        return;
+    }
+
+    const slides = [...carousel.querySelectorAll('.hero-slide')];
+    const previousButton = carousel.querySelector('.carousel-button-prev');
+    const nextButton = carousel.querySelector('.carousel-button-next');
+    const desktopQuery = window.matchMedia(DESKTOP_QUERY);
+    const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let activeIndex = 0;
+    let rotationTimer;
+
+    const showSlide = (index) => {
+        activeIndex = (index + slides.length) % slides.length;
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle('is-active', slideIndex === activeIndex);
+        });
+    };
+
+    const stopRotation = () => {
+        window.clearInterval(rotationTimer);
+        rotationTimer = undefined;
+    };
+
+    const startRotation = () => {
+        stopRotation();
+
+        if (desktopQuery.matches && !reducedMotionQuery.matches && slides.length > 1) {
+            rotationTimer = window.setInterval(() => showSlide(activeIndex + 1), ROTATION_INTERVAL);
+        }
+    };
+
+    previousButton.addEventListener('click', () => {
+        showSlide(activeIndex - 1);
+        startRotation();
+    });
+
+    nextButton.addEventListener('click', () => {
+        showSlide(activeIndex + 1);
+        startRotation();
+    });
+
+    carousel.addEventListener('mouseenter', stopRotation);
+    carousel.addEventListener('mouseleave', startRotation);
+    carousel.addEventListener('focusin', stopRotation);
+    carousel.addEventListener('focusout', (event) => {
+        if (!carousel.contains(event.relatedTarget)) {
+            startRotation();
+        }
+    });
+
+    desktopQuery.addEventListener('change', startRotation);
+    reducedMotionQuery.addEventListener('change', startRotation);
+    startRotation();
+}
+
+export { registerHeroCarousel };
