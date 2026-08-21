@@ -562,7 +562,7 @@ select {
   footer.flex-col {
     align-items: flex-start;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 16rem;
     padding: 2rem 4rem;
   }
 
