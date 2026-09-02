@@ -502,7 +502,7 @@ select {
 
   .hero-image img {
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     width: 100%;
   }
 
@@ -633,6 +633,10 @@ select {
   footer.flex-col address {
     max-width: 40rem;
     text-align: left;
+  }
+
+  .hero-section{
+    background-color: white;
   }
 }
 
