@@ -638,6 +638,11 @@ select {
   .hero-section{
     background-color: white;
   }
+
+  .centered-container{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 ::placeholder {
